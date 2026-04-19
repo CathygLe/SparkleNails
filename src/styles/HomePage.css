@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.iPad {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top,
+  #D0B0D7 0%,
+  #f9f4fa 40%,
+  #ffffff 100%);
+}
+
+
+.title {
+  font-size: 64px;
+  color: #D0B0D7;
+  font-family: "Titan One", sans-serif;
+}
+
+.button1 {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 24px;
+  border-radius: 25px;
+  border: none;
+  background: #D0B0D7;
+  cursor: pointer;
+  width: 350px;
+}
+
+.button2 {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 24px;
+  border-radius: 25px;
+  border: none;
+  background: #C3C3C3;
+  cursor: pointer;
+  width: 350px;
+}

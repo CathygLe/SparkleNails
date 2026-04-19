@@ -1,6 +1,10 @@
 import "./../styles/HomePage.css";
 
-export default function HomePage() {
+type HomePageProps = {
+  onCustomerCheckIn: () => void;
+};
+
+export default function HomePage({ onCustomerCheckIn }: HomePageProps) {
   return (
     <div className="container">
       <div className="iPad">
@@ -9,7 +13,8 @@ export default function HomePage() {
 
         <button
           className="button1"
-          onClick={() => alert("Enter clicked")}
+          type="button"
+          onClick={onCustomerCheckIn}
         >
           CUSTOMER CHECK-IN
         </button>

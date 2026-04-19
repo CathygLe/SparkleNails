@@ -22,29 +22,29 @@
 
 
 .title {
-  font-size: 64px;
+  font-size: 95px;
   color: #D0B0D7;
   font-family: "Titan One", sans-serif;
 }
 
 .button1 {
-  margin-top: 20px;
+  margin-top: 50px;
   padding: 12px 24px;
-  font-size: 24px;
+  font-size: 45px;
   border-radius: 25px;
   border: none;
   background: #D0B0D7;
   cursor: pointer;
-  width: 350px;
+  width: 600px;
 }
 
 .button2 {
-  margin-top: 20px;
+  margin-top: 35px;
   padding: 12px 24px;
-  font-size: 24px;
+  font-size: 45px;
   border-radius: 25px;
   border: none;
   background: #C3C3C3;
   cursor: pointer;
-  width: 350px;
+  width: 600px;
 }

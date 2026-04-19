@@ -1,0 +1,86 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.PhoneNumber {
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  box-sizing: border-box;
+  background: linear-gradient(to top,
+  #95BEC9 0%,
+  #bacdd3 40%,
+  #ffffff 100%);
+}
+
+.checkInPhoneNumber .title {
+  font-size: 95px;
+  color: #94BDC9;
+  padding-bottom: 25px;
+}
+
+.checkInPhoneNumber .input {
+  width: 450px;
+  padding: 12px;
+  font-size: 45px;
+  border-radius: 10px;
+  border: none;
+  text-align: center;
+  background: #EBE7ED;
+  color: black;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08)
+}
+
+.checkInPhoneNumber .buttonRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  width: max-content;
+  margin-top: 20px;
+  gap: 0;
+}
+
+/* Space between BACK and CONFIRM = keypad card width (--phone-keypad-outer-width) */
+.checkInPhoneNumber .buttonRowSpacer {
+  flex: 0 0 var(--phone-keypad-outer-width);
+  width: var(--phone-keypad-outer-width);
+  min-width: var(--phone-keypad-outer-width);
+  flex-shrink: 0;
+}
+
+/* Match HomePage .button1 / .button2 shape; colors follow this screen’s palette */
+.checkInPhoneNumber .buttonRow .button,
+.checkInPhoneNumber .buttonRow .buttonBack {
+  flex: 0 0 auto;
+  max-width: 500px;
+  margin-top: 0;
+  padding: 12px 24px;
+  font-size: 45px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.checkInPhoneNumber .buttonRow .buttonBack {
+  background: #adacac;
+  color: white;
+  font-size: 40px;
+}
+
+.checkInPhoneNumber .buttonRow .button {
+  background: #23bd56ef;
+  color: white;
+  font-size: 40px;
+}

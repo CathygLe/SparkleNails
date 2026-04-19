@@ -1,0 +1,55 @@
+/* Must match .keypadWrapper width — used as gap between BACK and CONFIRM */
+:root {
+  --phone-keypad-outer-width: 450px;
+}
+
+.keypadWrapper {
+  box-sizing: border-box;
+  background: #EBE7ED;
+  width: 450px;
+  padding: 28px 24px;
+  border-radius: 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.calc {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.calc button {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 95px;
+  font-size: 45px;
+  font-weight: 500;
+  border-radius: 35px;
+  border: none;
+  background: #95BEC9;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+
+  cursor: pointer;
+}
+
+.calc button:active {
+  transform: scale(0.95);
+}
+
+.calc button.keypadDelete {
+  background: #c62828;
+  color: #fff;
+}
+
+.calc button.keypadDelete:active {
+  background: #b71c1c;
+}

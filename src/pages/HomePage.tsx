@@ -2,9 +2,10 @@ import "./../styles/HomePage.css";
 
 type HomePageProps = {
   onCustomerCheckIn: () => void;
+  onHistory: () => void;
 };
 
-export default function HomePage({ onCustomerCheckIn }: HomePageProps) {
+export default function HomePage({ onCustomerCheckIn, onHistory }: HomePageProps) {
   return (
     <div className="container">
       <div className="iPad">
@@ -21,7 +22,8 @@ export default function HomePage({ onCustomerCheckIn }: HomePageProps) {
 
         <button
           className="button2"
-          onClick={() => alert("Enter clicked")}
+          type="button"
+          onClick={onHistory}
         >
           HISTORY
         </button>

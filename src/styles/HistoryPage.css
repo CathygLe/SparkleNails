@@ -1,0 +1,179 @@
+.historyPage .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.historyPage .historyCard {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #d0b0d7 0%, #f9f4fa 40%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 28px 24px 24px;
+}
+
+.historyPage .title {
+  font-size: 86px;
+  color: #d0b0d7;
+  margin: 0;
+  font-family: "Titan One", sans-serif;
+}
+
+.historyPage .historyTopRow {
+  width: min(1400px, 96%);
+  margin-top: 20px;
+}
+
+.historyPage .searchInput {
+  width: 100%;
+  border: none;
+  border-radius: 18px;
+  font-size: 32px;
+  padding: 16px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+}
+
+.historyPage .historyList {
+  width: min(1400px, 96%);
+  margin-top: 20px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-right: 8px;
+}
+
+.historyPage .historyItem {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  align-items: center;
+  gap: 18px;
+  border: none;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.92);
+  padding: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  cursor: pointer;
+}
+
+.historyPage .initialCircle {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: #d0b0d7;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.historyPage .visitInfo p {
+  margin: 0;
+}
+
+.historyPage .clientName {
+  font-size: 34px;
+  font-weight: 700;
+  color: #444;
+}
+
+.historyPage .clientPhone,
+.historyPage .visitDate {
+  margin-top: 4px;
+  font-size: 24px;
+  color: #666;
+}
+
+.historyPage .workerTag {
+  background: #95bec9;
+  color: #fff;
+  border-radius: 999px;
+  padding: 10px 18px;
+  font-size: 24px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.historyPage .buttonRow {
+  margin-top: 22px;
+}
+
+.historyPage .buttonBack {
+  padding: 12px 24px;
+  font-size: 40px;
+  border-radius: 25px;
+  border: none;
+  background: #adacac;
+  color: white;
+  cursor: pointer;
+}
+
+.historyPage .emptyState {
+  text-align: center;
+  font-size: 32px;
+  color: #666;
+  margin-top: 24px;
+}
+
+.historyPage .overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+
+.historyPage .modalCard {
+  width: min(980px, 92vw);
+  background: #fff;
+  border-radius: 22px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+  position: relative;
+}
+
+.historyPage .closeModal {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 42px;
+  line-height: 1;
+  cursor: pointer;
+  color: #666;
+}
+
+.historyPage .modalTitle {
+  margin: 0 0 14px 0;
+  color: #d0b0d7;
+  font-size: 44px;
+}
+
+.historyPage .previewItem {
+  cursor: default;
+}
+
+.historyPage .modalDetails {
+  margin-top: 14px;
+  font-size: 26px;
+  color: #444;
+}
+
+.historyPage .modalDetails p {
+  margin: 8px 0;
+}

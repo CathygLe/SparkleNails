@@ -102,16 +102,6 @@ export default function HistoryPage({ visits, onBack }: HistoryPageProps) {
       {selectedVisit && (
         <div className="overlay" onClick={() => setSelectedVisitId(null)}>
           <div className="modalCard" onClick={(e) => e.stopPropagation()}>
-            <button
-              type="button"
-              className="closeModal"
-              onClick={() => setSelectedVisitId(null)}
-              aria-label="Close details"
-            >
-              ×
-            </button>
-
-            <h2 className="modalTitle">VISIT DETAILS</h2>
             <div className="historyItem previewItem">
               <div className="initialCircle">{getInitials(selectedVisit.name)}</div>
               <div className="visitInfo">
@@ -122,16 +112,38 @@ export default function HistoryPage({ visits, onBack }: HistoryPageProps) {
               <div className="workerTag">{selectedVisit.workers.join(", ") || "No worker"}</div>
             </div>
 
-            <div className="modalDetails">
-              <p>
-                <strong>Services:</strong> {selectedVisit.services.join(", ") || "None"}
-              </p>
-              <p>
-                <strong>Workers:</strong> {selectedVisit.workers.join(", ") || "None"}
-              </p>
-              <p>
-                <strong>Points:</strong> {selectedVisit.points}
-              </p>
+            <div className="modalDetailsCard">
+              <div className="detailRow">
+                <span className="detailLabel">SERVICE:</span>
+                <span className="detailValuePill">
+                  {selectedVisit.services.join(", ") || "NONE"}
+                </span>
+              </div>
+              <div className="detailRow">
+                <span className="detailLabel">POINTS:</span>
+                <span className="detailValuePill">{selectedVisit.points}</span>
+              </div>
+              <div className="detailRow">
+                <span className="detailLabel">TOTAL POINTS:</span>
+                <span className="detailValuePill">{selectedVisit.points}</span>
+              </div>
+
+              <div className="modalActions">
+                <button
+                  type="button"
+                  className="modalCancelButton"
+                  onClick={() => setSelectedVisitId(null)}
+                >
+                  CANCEL
+                </button>
+                <button
+                  type="button"
+                  className="modalSaveButton"
+                  onClick={() => setSelectedVisitId(null)}
+                >
+                  SAVE
+                </button>
+              </div>
             </div>
           </div>
         </div>

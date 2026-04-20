@@ -4,9 +4,10 @@ import PhoneKeypad from "./../components/PhoneKeyPad";
 
 type CheckInPhoneNumberProps = {
   onBack: () => void;
+  onConfirm: (phone: string) => void;
 };
 
-export default function CheckInPhoneNumber({ onBack }: CheckInPhoneNumberProps) {
+export default function CheckInPhoneNumber({ onBack, onConfirm }: CheckInPhoneNumberProps) {
   const [phone, setPhone] = useState("");
 
   return (
@@ -33,7 +34,7 @@ export default function CheckInPhoneNumber({ onBack }: CheckInPhoneNumberProps) 
 
                 <div className="buttonRowSpacer" aria-hidden="true" />
 
-                <button type="button" className="button" onClick={() => console.log("Phone:", phone)} >
+                <button type="button" className="button" onClick={() => onConfirm(phone)} >
                     CONFIRM
                 </button>
             </div>

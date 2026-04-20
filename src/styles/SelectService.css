@@ -1,0 +1,90 @@
+.selectService .container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.selectService .serviceCard {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to top, #95bec9 0%, #bacdd3 40%, #ffffff 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.selectService .title {
+  font-size: 95px;
+  color: #94bdc9;
+  padding-bottom: 100px;
+  margin: 0;
+}
+
+.selectService .serviceOptions {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.selectService .serviceButton {
+  width: 100%;
+  padding: 16px 20px;
+  font-size: 42px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  background: #9ca4a7;
+  color: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.selectService .serviceButton.selected {
+  background:  #94bdc9;
+}
+
+.selectService .buttonRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+  width: max-content;
+  margin-top: 40px;
+  gap: 0;
+}
+
+.selectService .buttonRowSpacer {
+  flex: 0 0 var(--phone-keypad-outer-width);
+  width: var(--phone-keypad-outer-width);
+  min-width: var(--phone-keypad-outer-width);
+  flex-shrink: 0;
+}
+
+.selectService .buttonRow .button,
+.selectService .buttonRow .buttonBack {
+  flex: 0 0 auto;
+  max-width: 500px;
+  margin-top: 0;
+  padding: 12px 24px;
+  font-size: 40px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.selectService .buttonRow .buttonBack {
+  background: #adacac;
+  color: white;
+}
+
+.selectService .buttonRow .button {
+  background: #23bd56ef;
+  color: white;
+}
